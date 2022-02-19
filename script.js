@@ -8,6 +8,9 @@ addDesposit.addEventListener("click", () => {
   }
   
   document.getElementById("depositCurrence").value = "";
+  if (depositCurrence < 0){
+    alert('You cannot deposit negative number');
+  }
 });
 
 
@@ -21,7 +24,7 @@ withDrawBtn.addEventListener('click', ()=>{
   }
 
 
-  document.getElementById("withDrawCurrency").value = ''
+  document.getElementById("withDrawCurrency").value = '';
 })
 
 
